@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab02</string>
+    <string name="valueLabel">Value:</string>
+    <string name="valueEditText" />
+    <string name="resultLabel">result</string>
+    <string name="calculateButton">Double The Value</string>
+</resources>
