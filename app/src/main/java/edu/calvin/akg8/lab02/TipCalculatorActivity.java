@@ -1,5 +1,13 @@
 package edu.calvin.akg8.lab02;
 
+/*
+* Lab02
+* This activity creates a simple tip calculator app
+* 
+* @author: Andrew Gbeddy
+* @version: fall 2016
+*/
+
 import android.app.Activity;
 import android.content.SharedPreferences; // Import for save feature
 import android.content.SharedPreferences.Editor;
@@ -47,7 +55,8 @@ public class TipCalculatorActivity extends Activity
         // get SharedPreferences object
         savedValues = getSharedPreferences("SavedValues", MODE_PRIVATE);
     }
-
+    
+    // save values through pause/resume cycles
     @Override
     public void onPause() {
         // save the instance variables
@@ -64,7 +73,8 @@ public class TipCalculatorActivity extends Activity
         //calculate and display
         calculateAndDisplay();
     }
-
+    
+    // calculate method
     public void calculateAndDisplay() {
 
         // get the value
@@ -96,7 +106,8 @@ public class TipCalculatorActivity extends Activity
         }
         return false;
     }
-
+    
+    // Perform calculation when the button is clicked
     @Override
     public void onClick(View v) {
         calculateAndDisplay();
