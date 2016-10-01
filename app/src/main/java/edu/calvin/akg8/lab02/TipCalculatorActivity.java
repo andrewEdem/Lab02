@@ -2,6 +2,7 @@ package edu.calvin.akg8.lab02;
 
 /*
 * Lab02
+* CS-262
 * This activity creates a simple tip calculator app
 * 
 * @author: Andrew Gbeddy
